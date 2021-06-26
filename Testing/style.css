@@ -1,0 +1,106 @@
+
+
+#navbarNav{
+    border-width: inherit;
+    border-bottom: 2px solid gray;
+    
+    
+}
+.nav-item{
+    margin-left:30px;
+    margin-right:30px;
+    
+}
+.maintitle{
+    
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    color:#259db8;
+}
+.infoicon{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40px;
+        margin-top: 30px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color:#259db8;
+    margin-bottom: 30px;
+}
+.info1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.ui-datepicker-calendar {
+    display: none;
+ }
+ #myform{
+  text-align: center;
+    display: inline-block;
+    align-content: center;
+ }
+.box{
+    display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+#uroven{
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+/*чтобы плэйсхолдеры стояли по середине*/
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+
+ #comment{
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+ }
+ .finish{
+     margin-top: 30px;
+     background-color: midnightblue;
+     color:white;
+     margin-left:auto;
+    margin-right: auto;
+    display: block;
+ }
+/*browser size*/
+
+ .navbar select {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .navbar ul     { display: none; }
+    .navbar select { display: inline-block; }
+  }
+

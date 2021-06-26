@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TestingExercise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <!--тут я импортировал несколько шрифтов, бутсрап и джейкуери-->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@400&family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--тут с бутстрапом создал навбар и все-->
+        <nav class="navbar navbar-expand-lg  navbar-light bg-light" >
+       
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav" style="color:aquamarine">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Личная Информация <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Опыт</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О Себе</a>
+                  </li>
+   
+              </ul>
+            </div>
+            <!--тут я создал еще один навбар для маленького размера браузера-->
+            <select> 
+                <option value="" selected="selected">Select</option> 
+                
+                <option class="nav-link" href="#">Личная Информация <span class="sr-only">(current)</span></option> 
+                <option class="nav-link" href="#">Опыт</option> 
+                <option class="nav-link" href="#">JavaScript</option> 
+                <option  class="nav-link" href="#">О Себе</option> 
+              </select> 
+          </nav>
+        
+
+        <h1 class="maintitle">Анкета</h1>
+        <img src="images/icon.png" class="infoicon">
+        <br>
+        <h3 class=info>Личная Информация</h3>
+
+        <form  id="myform" class="d-flex flex-column justify-content-center align-items-center">
+            <input class="box" type="text" placeholder="ФИО" size="50" ><br>
+            <!--вот это я хотел просто написать инпут тайп дэйт но передумал так как в примере написано только год рождения и написал вот такую селект-->
+            <select name="year" id="year-select">
+                <option value="born">Год рождения</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+            </select><br>
+            <input class="box" type="text" placeholder="Место Проживания"size="50" ><br>
+            <input class="box" type="text" placeholder="Skype"size="50" ><br>
+            <input class="box" type="text" placeholder="E-mail"size="50" ><br>
+        </form>
+        
+        <img src="images/list.png"class="infoicon">
+
+        <h2 class="maintitle">Расскажите о своем опыте</h2><br><br>
+
+<!--Самый сложный часть был этот он занял у меня как минимум 2 часа, я не мог их всех выровнять так как размеры слов не совпадают
+друг с другом) и искал попробовал все что можно) -->
+        <div class="container">
+            <div class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3">
+              <div class="col">
+                <div class="p-3  bg-light form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      БЭМ/OOCSS
+                    </label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3  bg-light form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Верстаю семантично
+                    </label></div>
+              </div>
+              <div class="col">
+                <div class="p-3  bg-light form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Webpack
+                    </label></div>
+              </div>
+              <div class="col">
+                <div class="p-3  bg-light form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Stylus/LESS/SASS
+                    </label></div>
+              </div>
+              <div class="col">
+                <div class="p-3  bg-light form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      ES2015/ES2016
+                    </label></div>
+              </div>
+              <div class="col">
+                <div class="p-3  bg-light form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      jQuery
+                    </label></div>
+              </div>
+              <div class="col">
+                <div class="p-3  bg-light form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Работаю с SVG
+                    </label></div>
+              </div>
+              <div class="col">
+                <div class="p-3  bg-light form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Gulp/GRUNT
+                    </label></div>
+              </div>
+              <div class="col">
+                <div class="p-3  bg-light form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Использую Git
+                    </label></div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <br><br><br>
+
+          <img src="images/js.png" class="infoicon">
+
+          
+          <h2 class="info1"> Уровень владения JavaScript</h2>
+          <div class="container">
+          <div class="row">
+            <div class="col">Не владею</div>
+            <div class="col">Использую готовые решения</div>
+            <div class="col">Использую готовые решения и умею и переделывать</div>
+            <div class="col">Пишу сложный JS с нуля</div>
+          </div>
+        </div>
+        <!--Вот этот слайдер я использую впервые и для меня было как новое) раньше я видел такое но не обращал внимение) я сделал бутстрапом так как думаю легче будет-->
+        <input type="range" class="form-range" min="0" max="3" step="1" id="uroven" >
+        <!--я увидел что там написано что для слайдера должны использовать джаваскрипт, но бутстрап тоже работает во всех браузерах, простите если неправильно 
+        но я хотел так написать-->
+       
+
+        <img src="images/about.png" class ="infoicon">
+        <h3 class="info1">Расскажите о себе</h3>
+        <h4 class="info1">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</h4>
+        <!-- Я бы хотел набраться опытом, я бы мог и дома самостоятельно учиться, но думаю учиться общаясь с другими людьми будет 
+        намного лучше и результативнее) если честно не так много опыта работы и готов к трудностям -->
+
+        <textarea id="comment" rows="5"cols="50" placeholder="Понравилось тем, что"></textarea>
+        <input type="submit" value="Готово"class="finish">
+    </body>
+</html>
