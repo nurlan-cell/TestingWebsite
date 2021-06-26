@@ -1,4 +1,4 @@
-//Год Рождения
+//Год Рождения 40 minutes
 $(document).ready(function() {
     $("select").change(function() {
         $(this).find("option").html(function(){ return this.value + " " + $(this).attr("data-count"); });
@@ -7,7 +7,7 @@ $(document).ready(function() {
 });
 
 
-//при ширине окна браузера менее 768px меню нужно сделать выпадающим 
+//при ширине окна браузера менее 768px меню нужно сделать выпадающим 30minutes
 $("<select />").appendTo("navbar");
 
 $("<option />", {
